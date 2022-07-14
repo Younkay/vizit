@@ -1,0 +1,233 @@
+body {
+		background: url("../img/fon.jpg") ;
+/* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */   	background-position: center center;      
+/* Фон не повторяется */   
+		background-repeat: no-repeat;      
+/* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */   
+		background-attachment: fixed;      
+/* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/   
+		background-size: cover;      
+/* Цвет фона, который будет отображаться при загрузке фоновой картинки*/  
+		margin: 0;
+		
+		line-height: 1.5;
+}
+
+.header {
+	font-size: 65px;
+	color: #000; 
+	text-align: center;
+	padding: 75px;
+}
+.oneclass {
+	font-family: Tahoma;
+	font-size: 18px;
+}
+.card {
+	color: #283258;
+	width: 400px;
+	margin: 0 auto;
+	background-color: #FFF;
+	box-shadow: 5px 5px 15px #ccc;
+	border-radius: 10px;
+	padding: 20px;
+
+}
+.card-me{
+	display: block;
+	width: 240px;
+	height: 250px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.world{
+	background: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+.card-titlesub{
+	font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+    color: #5228c7;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0 40px 100px, 0 0 2px, 0 0 1em #fff, 0 0 0.5em #fff, 0 0 0.1em #fff;
+}
+.card-titlesub span {
+	animation: neon-4 linear infinite 3s;
+}
+@keyframes neon-4 {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    79%{
+        color: #7950eb;
+    }
+    80% {
+        text-shadow: none;
+    }
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    82% {
+        color: #734ddb;
+        text-shadow: none;
+    }
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    92% {
+        color: #5228c7;
+        text-shadow: none;
+    }
+    95.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+.field{
+	box-shadow: 0 10px 15px #17217a;
+	-webkit-border-radius: 60px;
+border-radius: 60px;
+border: none;
+color: #eeeeee;
+
+font-family: sans-serif; 
+font-size: 20px;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+}
+
+.card-title{
+	font-size: 35px;
+	text-align: center;
+}
+.card-titlesub{
+	color: #627189;
+	font-size: 28px;
+	text-align: center;
+}
+.card-text{
+	margin: 0 auto;
+	width: 400px;
+	background-color: #FFF;
+	box-shadow: 5px 5px 5px;
+	display: block;
+	font-size: 18px;
+	color: #627189;
+	border-radius: 15px;
+}
+.mycon{
+	text-align: center;
+	height: 15px;
+	
+}
+.unl{
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+.footer{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	font-family: Consolas;
+
+}
+.button{
+	position: relative;
+	color: #2196F3;
+	display: inline-block;
+	padding: 15px 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 25px;
+	letter-spacing: 4px;
+	overflow: hidden;
+	transition: 0,2s;
+}
+.button__line{
+	position: absolute;
+	display: block;
+}
+.button__line--top{
+	top: 0;
+	left: -100%;
+	width: 100px;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #2196f3);
+
+}
+.button:hover .button__line--top{
+	left: 100%;
+	transition: 1s;
+	transition-delay: 0,25s;
+}
+.button__line--bottom{
+	bottom: 0;
+	right: -100%;
+	width: 100px;
+	height: 2px;
+	background: linear-gradient(270deg, transparent, #2196f3);
+
+}
+.button:hover .button__line--bottom{
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0,25s;
+}
+.button__line--left{
+	bottom: -100%;
+	left: 0%;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(0deg, transparent, #2196f3);
+
+}
+.button:hover .button__line--left{
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0s;
+}
+.button__line--right{
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #2196f3);
+
+}
+.button:hover .button__line--right{
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0s;
+}
+.button:hover{
+	box-shadow: 0 0px 10px #2196f3, 0 0px 40px #2196f3, 0 0px 80px #2196f3;
+	transition: 1s;
+	transition-delay: 1s;
+	background-color: #2196F3;
+	color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
